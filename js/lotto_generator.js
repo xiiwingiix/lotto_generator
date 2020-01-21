@@ -42,9 +42,9 @@ var lotto = {
 				//배경색 지정
 				if(ballArray[i]> 1 && ballArray[i]<= 10 ){
 					bg = 'salmon'
-				}else if (ballArray[i]> 10 && ballArray[i]<= 20 ){
+				}else if (ballArray[i]<= 20 ){
 					bg = 'green'
-				}else if (ballArray[i]> 20 && ballArray[i]<= 30 ){
+				}else if (ballArray[i]<= 30 ){
 					bg = 'yellow'
 				}else {
 					bg = 'gray'
@@ -53,16 +53,16 @@ var lotto = {
 				$('.ball_list li:last-child').append('<div style="background-color:'+bg+';">'+ballArray[i]+'</div>'); 
 			}
 		},
+		
 		rotation : function(cnt){
 			ratationCnt = cnt ;
 			for(var i = 0; i < ratationCnt ; i++){
 				$('.ball_list').append('<li class="once"></li>');
 				lotto.create();
-
 			}
 		},
-		init : function(){ //첫 세팅
 
+		init : function(){ //첫 세팅
 			$('.ball_list li').remove();
 
 		},
