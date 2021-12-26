@@ -1,22 +1,23 @@
 @charset "utf-8";
 
 .ball_list li{
-	list-style: none; 
-	margin-right: 10px; 
-	background: #eee; 
-	padding: 10px; 
-	width: 300px; 
-	overflow: hidden; 
+	list-style: none;
+	margin-right: 10px;
+	background: #eee;
+	padding: 10px;
+	width: 300px;
+	overflow: hidden;
 	margin-bottom: 10px;
 	}
+	
 .ball_list div{
-	width: 20px; 
-	height: 20px; 
-	border-radius: 50%; 
-	float: left; 
-	list-style: none; 
-	margin-right: 10px; 
-	background: #eee; 
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+	background: #eee;
 	padding: 10px;
 	text-align: center;
 	}
